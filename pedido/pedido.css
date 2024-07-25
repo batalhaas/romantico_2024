@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: rgb(49, 5, 96);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .container {
+    height: 100vh;
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dog-img {
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    font-size: 3.6rem;
+    color: #ffffffb1;
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: text-shadow 1s;
+  }
+  
+  .title:hover {
+    color:  #ffffffb1; /* cor de fundo do botão quando o usuário passa o mouse sobre ele */
+    text-shadow: 0 0 15px rgb(234, 234, 234); /* adiciona sombra ao botão */
+
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 1.5rem 2.5rem;
+    border: none;
+    border-radius: 10px;
+  
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .btn--yes {
+    background-color: #022308;
+    transition: background-color 1s, box-shadow 1s;
+  }
+
+  .btn--yes:hover {
+    background-color: #036b16; box-shadow: #00b312;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    background-color: #036b16; /* cor de fundo do botão quando o usuário passa o mouse sobre ele */
+    box-shadow: 0 0 15px rgb(60, 255, 0); /* adiciona sombra ao botão */
+  }
+  
+  .btn--no {
+    background-color: #630a0a;
+    transition: background-color 1s, box-shadow 1s;
+  }
+
+  .btn--no:hover {
+    background-color: #ae0101; box-shadow: #ff0000;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    background-color: #ae0101; /* cor de fundo do botão quando o usuário passa o mouse sobre ele */
+    box-shadow: 0 0 15px rgb(255, 0, 0); /* adiciona sombra ao botão */
+  }
+  
+  .hidden {
+    display: none;
+  }
